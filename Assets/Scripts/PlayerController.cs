@@ -37,7 +37,23 @@ public class PlayerController : MonoBehaviour
 
         movimiento.Normalize();
         animator.SetBool("movimiento", movimiento.sqrMagnitude > 0);
-        
+        if (movimiento.y > 0)
+        {
+            animator.SetInteger("direccion", 0);
+        }
+        else if (movimiento.y < 0)
+        {
+            animator.SetInteger("direccion", 1);
+        }
+        else if (movimiento.x < 0)
+        {
+            animator.SetInteger("direccion", 2);
+        }
+        else if (movimiento.x > 0)
+        {
+            animator.SetInteger("direccion", 3);
+        }
+                
     }
     
     void FixedUpdate()
