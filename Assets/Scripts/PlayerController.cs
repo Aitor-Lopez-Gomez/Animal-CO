@@ -1,24 +1,31 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed;
-    public float tiempoAtaque = 0.3f;
+    public float tiempoAtaque = 0;
+    public float distanciaCaja;
+    public Vector2 tamanno;
+    public LayerMask capaEnemigo;
     Vector3 movimiento;
     Animator animator;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-       animator = GetComponent<Animator>();
+    AudioSource audioSource;
+
+    void Start(){
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update(){
+        Movimiento();
+        Animaciones();
+        Ataque();
+    }
+
+    void Movimiento(){
         movimiento = new Vector3();
+
         if (Input.GetKey(KeyCode.D))
         {
             movimiento += new Vector3(1,0,0);
@@ -37,7 +44,11 @@ public class PlayerController : MonoBehaviour
         }
 
         movimiento.Normalize();
+    }
+
+    void Animaciones(){
         animator.SetBool("movimiento", movimiento.sqrMagnitude > 0);
+
         if (movimiento.y > 0)
         {
             animator.SetInteger("direccion", 0);
@@ -49,15 +60,20 @@ public class PlayerController : MonoBehaviour
         else if (movimiento.x < 0)
         {
             animator.SetInteger("direccion", 2);
-        
         }
         else if (movimiento.x > 0)
         {
             animator.SetInteger("direccion", 3);
         }
-       if (Input.GetKeyDown(KeyCode.Space))
+    }
+
+    void Ataque(){
+        if (Input.GetKeyDown(KeyCode.Space))
         {
+            Debug.Log("Espacio pulsado");
+            audioSource.Play();
             tiempoAtaque = 0.4f;
+            Golpear();
         }
 
         if (tiempoAtaque > 0)
@@ -66,13 +82,65 @@ public class PlayerController : MonoBehaviour
         }
 
         animator.SetBool("atacando", tiempoAtaque > 0);
-                
+    }
+
+    void Golpear(){
+        Vector2 vector = Vector2.up;
+        int direccion = animator.GetInteger("direccion");
+
+        if (direccion == 1)
+        {
+            vector = Vector2.down;
+        }
+        else if (direccion == 2)
+        {
+            vector = Vector2.left;
+        }
+        else if (direccion == 3)
+        {
+            vector = Vector2.right;
+        }
+
+        RaycastHit2D rc = Physics2D.BoxCast(GetComponent<Collider2D>().bounds.center, tamanno, 0, vector, distanciaCaja, capaEnemigo);
+
+        if (rc)
+        {
+            Debug.Log("Enemigo detectado");
+            rc.collider.GetComponent<VidaEnemigo>().RecibirDano(25);
+        }
+        else
+        {
+            Debug.Log("No hay enemigo");
+        }
+    }
+
+    void OnDrawGizmos(){
+        Vector3 vector = Vector3.up;
+
+        if (animator != null)
+        {
+            int direccion = animator.GetInteger("direccion");
+
+            if (direccion == 1)
+            {
+                vector = Vector3.down;
+            }
+            else if (direccion == 2)
+            {
+                vector = Vector3.left;
+            }
+            else if (direccion == 3)
+            {
+                vector = Vector3.right;
+            }
+        }
+
+        Gizmos.color = Color.red;
+        Vector3 centro = GetComponent<Collider2D>().bounds.center;
+        Gizmos.DrawWireCube(centro + vector * distanciaCaja, tamanno);
     }
     
-    void FixedUpdate()
-    {
+    void FixedUpdate(){
         transform.position += movimiento * speed * Time.deltaTime;
     }
-
-
 }
