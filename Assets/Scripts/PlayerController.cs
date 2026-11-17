@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -11,6 +10,7 @@ public class PlayerController : MonoBehaviour
     Vector3 movimiento;
     Animator animator;
     AudioSource audioSource;
+    public GameObject efectoMordisco;
 
     void Start(){
         animator = GetComponent<Animator>();
@@ -69,16 +69,19 @@ public class PlayerController : MonoBehaviour
 
     void Ataque(){
         if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Espacio pulsado");
+        { 
             audioSource.Play();
-            tiempoAtaque = 0.4f;
+            tiempoAtaque = 0.2f;
             Golpear();
         }
 
         if (tiempoAtaque > 0)
         {
             tiempoAtaque -= Time.deltaTime;
+        }
+        if (tiempoAtaque <= 0)
+        {
+            efectoMordisco.SetActive(false);
         }
 
         animator.SetBool("atacando", tiempoAtaque > 0);
@@ -100,7 +103,9 @@ public class PlayerController : MonoBehaviour
         {
             vector = Vector2.right;
         }
-
+        Vector3 centro = GetComponent<Collider2D>().bounds.center;
+        efectoMordisco.transform.position = centro + (Vector3)vector * distanciaCaja;
+        efectoMordisco.SetActive(true);
         RaycastHit2D rc = Physics2D.BoxCast(GetComponent<Collider2D>().bounds.center, tamanno, 0, vector, distanciaCaja, capaEnemigo);
 
         if (rc)

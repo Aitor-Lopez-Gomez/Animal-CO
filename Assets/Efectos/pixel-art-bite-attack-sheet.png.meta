@@ -1,0 +1,642 @@
+fileFormatVersion: 2
+guid: 986666251c68f6e4e9644e99c045da94
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 192
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1056
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15ac3aacdc4750b489eaec648195b7f8
+      internalID: 1687595760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1056
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f325c6cc71b0d8c40bac222361091081
+      internalID: -682486398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 1056
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e07c530cf7a8d49b23d88c826d2365
+      internalID: -705264352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 1056
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b4b40a3ef7d5541821eb4d5c2c7432
+      internalID: 1283347314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 792
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f638ffc3c619b547884a062cec1a679
+      internalID: 1709622273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 792
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2721a5f59eb5e784dbd878ea128bcd57
+      internalID: -1778417261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 792
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf2977e53fd04a4d96d5e9854d8e560
+      internalID: 969901244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 792
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c26e565357a6943b725e1d25f4fe79
+      internalID: 1278697537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 792
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277b552f829aaad469bdc08e78da0cb4
+      internalID: 1511917947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 792
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8dd805e95a28640abd2463efd9b810
+      internalID: 973930717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 528
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9713982c045e36f42b685f5a24c98083
+      internalID: -246961739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 528
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7ebff11e25c324db514e9e5c3f4ad8
+      internalID: -1152041910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 528
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e546c8b0ed4122c45ba7c5a2a49ae795
+      internalID: -1120109597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 528
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98362122c71e5a745bdde4dd770b5cb5
+      internalID: 979840311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 528
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b89a366760539dd479cf5be5432c43c5
+      internalID: 1754660174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 528
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048e2ce9b2f9c784a840741477e9ed17
+      internalID: -877782058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 264
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae08aad4df550c244a62c0fca8d362fb
+      internalID: -699457215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 264
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a5638097257004ea76b3d187c98efe
+      internalID: 571958108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 264
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f329d72e702084dbd3103c7e6100e0
+      internalID: -1022295882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_19
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 264
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b152a06856b23494591cdd739a2d04f7
+      internalID: 2077741202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 264
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9497049cae926a940a25037f35937b29
+      internalID: -1750843132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1410
+        y: 264
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48baf39df4a4b8b409de333886a1eaab
+      internalID: 1061267467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3702aa7b8a913543becc864aa46a22e
+      internalID: -674033228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixel-art-bite-attack-sheet_23
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 0
+        width: 282
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f04935468f12794ab99c8f8bcaf411f
+      internalID: 1766612668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pixel-art-bite-attack-sheet_0: 1687595760
+      pixel-art-bite-attack-sheet_1: -682486398
+      pixel-art-bite-attack-sheet_10: -246961739
+      pixel-art-bite-attack-sheet_11: -1152041910
+      pixel-art-bite-attack-sheet_12: -1120109597
+      pixel-art-bite-attack-sheet_13: 979840311
+      pixel-art-bite-attack-sheet_14: 1754660174
+      pixel-art-bite-attack-sheet_15: -877782058
+      pixel-art-bite-attack-sheet_16: -699457215
+      pixel-art-bite-attack-sheet_17: 571958108
+      pixel-art-bite-attack-sheet_18: -1022295882
+      pixel-art-bite-attack-sheet_19: 2077741202
+      pixel-art-bite-attack-sheet_2: -705264352
+      pixel-art-bite-attack-sheet_20: -1750843132
+      pixel-art-bite-attack-sheet_21: 1061267467
+      pixel-art-bite-attack-sheet_22: -674033228
+      pixel-art-bite-attack-sheet_23: 1766612668
+      pixel-art-bite-attack-sheet_3: 1283347314
+      pixel-art-bite-attack-sheet_4: 1709622273
+      pixel-art-bite-attack-sheet_5: -1778417261
+      pixel-art-bite-attack-sheet_6: 969901244
+      pixel-art-bite-attack-sheet_7: 1278697537
+      pixel-art-bite-attack-sheet_8: 1511917947
+      pixel-art-bite-attack-sheet_9: 973930717
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
