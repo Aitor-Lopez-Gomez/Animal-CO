@@ -8,6 +8,8 @@ public class EnemigoController : MonoBehaviour
     public Transform jugador;
     Vector3 movimiento;
     Animator animator;
+    public float tiempoAtaque = 0;
+    public int dano = 25;
     public float distanciaCaja;
     public Vector2 tamanno;
     public LayerMask capaJugador;
@@ -70,8 +72,18 @@ public class EnemigoController : MonoBehaviour
         RaycastHit2D rc = Physics2D.BoxCast(GetComponent<Collider2D>().bounds.center, tamanno, 0, vector, distanciaCaja, capaJugador);
         if(rc)
         {
+            tiempoAtaque -= Time.deltaTime;
             movimiento = Vector3.zero;
-            animator.SetBool("atacando", true);
+            if (tiempoAtaque <= 0){
+                animator.SetBool("atacando", true);
+                rc.collider.GetComponent<VidaJugador>().RecibirDano(dano);
+                tiempoAtaque = 1f;
+            } 
+            else if (tiempoAtaque <= 0.5)
+            {
+                animator.SetBool("atacando", false);
+            }
+            
         } 
         else
         {
