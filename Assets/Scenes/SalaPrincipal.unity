@@ -316,6 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
+  duracionMordisco: 0.45
 --- !u!1 &2138020260
 GameObject:
   m_ObjectHideFlags: 0

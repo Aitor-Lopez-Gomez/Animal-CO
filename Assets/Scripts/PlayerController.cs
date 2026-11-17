@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
+    public float tiempoAtaque = 0.3f;
     Vector3 movimiento;
     Animator animator;
     
@@ -48,11 +49,23 @@ public class PlayerController : MonoBehaviour
         else if (movimiento.x < 0)
         {
             animator.SetInteger("direccion", 2);
+        
         }
         else if (movimiento.x > 0)
         {
             animator.SetInteger("direccion", 3);
         }
+       if (Input.GetKeyDown(KeyCode.Space))
+        {
+            tiempoAtaque = 0.4f;
+        }
+
+        if (tiempoAtaque > 0)
+        {
+            tiempoAtaque -= Time.deltaTime;
+        }
+
+        animator.SetBool("atacando", tiempoAtaque > 0);
                 
     }
     
@@ -60,4 +73,6 @@ public class PlayerController : MonoBehaviour
     {
         transform.position += movimiento * speed * Time.deltaTime;
     }
+
+
 }
