@@ -5,11 +5,16 @@ using UnityEngine;
 public class VidaEnemigo : MonoBehaviour
 {
     public int vida = 100;
+    public float tiempoMuerte;
+    Animator animator;
     
     public void RecibirDano(int dano){
         vida -= dano;
         if(vida <= 0){
-            Destroy(gameObject);
+            GetComponent<Animator>().SetBool("muerto", true);
+            GetComponent<EnemigoController>().enabled = false;
+            GetComponent<Collider2D>().enabled = false;
+            Destroy(gameObject, tiempoMuerte);
         }
     }
 }

@@ -304,6 +304,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   jugador: {fileID: 733303042}
+  tiempoAtaque: 0
+  dano: 25
+  distanciaCaja: 1
+  tamanno: {x: 0.7, y: 1}
+  capaJugador:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!50 &668292874
 Rigidbody2D:
   serializedVersion: 4
@@ -346,6 +353,7 @@ GameObject:
   - component: {fileID: 733303044}
   - component: {fileID: 733303046}
   - component: {fileID: 733303047}
+  - component: {fileID: 733303048}
   m_Layer: 6
   m_Name: Jugador
   m_TagString: Untagged
@@ -528,7 +536,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   tiempoAtaque: 0
-  distanciaCaja: 0.7
+  distanciaCaja: 1
   tamanno: {x: 0.4, y: 0.4}
   capaEnemigo:
     serializedVersion: 2
@@ -630,6 +638,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &733303048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733303040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e17a9ff19866240b87df32584b37b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vida: 100
 --- !u!1 &1002947329
 GameObject:
   m_ObjectHideFlags: 0
