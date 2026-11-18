@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
+
 
 public class GeneradorEnemigos : MonoBehaviour
 {
@@ -9,9 +9,10 @@ public class GeneradorEnemigos : MonoBehaviour
     public Transform jugador;
     public float tiempoGeneracion;
     float temporizador;
+    public Transform[] puntos;
     void Start()
     {
-        GenerarEnemigos();
+
     }
     void Update()
     {
@@ -26,7 +27,10 @@ public class GeneradorEnemigos : MonoBehaviour
     // Update is called once per frame
     void GenerarEnemigos()
     {
-        GameObject nuevoEnemigo = Instantiate(enemigo, transform.position, quaternion.identity);
+        int aleatorio = Random.Range(0, puntos.Length);
+        GameObject nuevoEnemigo = Instantiate(enemigo, puntos[aleatorio].position, Quaternion.identity);
         nuevoEnemigo.GetComponent<EnemigoController>().jugador = jugador;  
     }
+
+
 }
