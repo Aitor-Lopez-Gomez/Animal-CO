@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vida: 100
+  tiempoMuerte: 2
 --- !u!61 &668292869
 BoxCollider2D:
   m_ObjectHideFlags: 0
