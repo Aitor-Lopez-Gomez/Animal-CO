@@ -185,8 +185,8 @@ MonoBehaviour:
   jugador: {fileID: 0}
   tiempoAtaque: 0
   dano: 25
-  distanciaCaja: 1
-  tamanno: {x: 0.7, y: 1}
+  distanciaCaja: 0.7
+  tamanno: {x: 0.7, y: 0.4}
   capaJugador:
     serializedVersion: 2
     m_Bits: 64
