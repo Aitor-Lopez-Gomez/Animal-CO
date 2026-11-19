@@ -1,0 +1,1918 @@
+fileFormatVersion: 2
+guid: 44d64694715ef1c47b190cf67b46c6f7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Rocks_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 295
+        width: 33
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8d9a92a27dc134eb61c76275c12751
+      internalID: 1654079353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 300
+        width: 12
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2e88402156bd04f82d087b4cedc4e9
+      internalID: -1298769089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_2
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 230
+        width: 28
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1e36af428296542a82b459b14fd3fb
+      internalID: 412745487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_3
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 258
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9944e2b13c1a72246bd36a4483b157ed
+      internalID: 1007607584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 274
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dafc1a4a6372eb34aacea34a98110ac3
+      internalID: 1270823820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 273
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d61581d4bb8194da30f264283be14a
+      internalID: 612861888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_6
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 230
+        width: 28
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4d624035b265c45911e4540ad46863
+      internalID: -1758584281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 258
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4709e4c185c58d43bf786f8fe21199a
+      internalID: -676863829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_8
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 274
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb4b4b4fe20fbb43bf4d90a84885bd4
+      internalID: -1407745226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_9
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 273
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d354470bf418f0a44bf72b53134a5ab4
+      internalID: -1937433005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_10
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 261
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ffb328f25f936488873abf90b8c346
+      internalID: -1233304962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 261
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca53691cc589c9042824720289e9ce55
+      internalID: -455434014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_12
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 244
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4380ef09518662642ae863dfe97d2bb7
+      internalID: -1745862067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 243
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abf1f61c6fcf60f41a6ef93ad749f6f4
+      internalID: 1020010988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_14
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 244
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a038467e094b57f4cb8777f270b9ef79
+      internalID: -1319832231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_15
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 244
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e4906e33ae28240aba9ae3691369a1
+      internalID: 1280252796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_16
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 244
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be5ed83c041254409e65313ba5f23fb
+      internalID: -1432186605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_17
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 243
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5db4eedad0ecc44691da7ec6beb68e8
+      internalID: 1709921424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_18
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 244
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c7862bfcde91746b1c9528b2cd5c3e
+      internalID: 451126319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_19
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 244
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67ff67818d176c42b3f578b4e09e0f4
+      internalID: -1443115691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_20
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 229
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04d4222a4752d7498c2ba0269d2dea4
+      internalID: -1619940134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_21
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 229
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbfb3262293cbb4fb1bc4640bbec193
+      internalID: 832488226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_22
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 228
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92931aef00e39f549a0f2089415f3474
+      internalID: 135571276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_23
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 227
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7935daada089d9d41a7274d3e32e4e1d
+      internalID: 2142891554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_24
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 229
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62919daf0ea17fe498ce080f366374c3
+      internalID: -145603120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_25
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 229
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af44352745d7d08419c3e798659a5bce
+      internalID: -1507763483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_26
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 228
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6d3e82f37e5b14d9a11dc147910f86
+      internalID: -1323482578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_27
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 227
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06562368fa07b434cb13970b4f437c24
+      internalID: -172091577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_28
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 213
+        width: 39
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677c3915c8977684086a10600b5aad67
+      internalID: -1081057934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_29
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 212
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d2eeeb6bd22b743b6f0e90896f5771
+      internalID: -782883073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_30
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 212
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d033a38bae9f46147af0ef736c237992
+      internalID: 1355064838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_31
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 213
+        width: 39
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ab042f7024c05246a0a67ed00506e09
+      internalID: 122727801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_32
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 212
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab685616e7c8b3a449a982388aee6caa
+      internalID: -1955314496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_33
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 212
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cf6427eeefd3304e8f2b4d6bbb8d93a
+      internalID: 604005518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_34
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 134
+        width: 28
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589612dfedf3abc459436a249d5b4d49
+      internalID: 1732334231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_35
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 197
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595df4d43672d5f41895763fefea39f5
+      internalID: -1682118479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_36
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 197
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551ef32f8d87ac2428697417de9c4633
+      internalID: 201422438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_37
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 196
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca9a145b8067de4088758f3a33fc913
+      internalID: -1356967638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_38
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 195
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bba60887e2d9494e8227afab076ba91
+      internalID: 903310991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_39
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 166
+        width: 26
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 328a23078d2f3064298d96b72421aa75
+      internalID: 145199567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_40
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 197
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6abd44e9f832a5b4aa53401c5602c065
+      internalID: 1135119486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_41
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 197
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6851da423e3c4a142aeea0dba11e7d2e
+      internalID: 802422517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_42
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 196
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b9fbd3ed71a0a4e8bab81ae44bcd97
+      internalID: 1394634413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_43
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 195
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613cc56eeb37ad341adf86bedd7455f6
+      internalID: -438897456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_44
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 162
+        width: 39
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eaa31c9f6e93484caf69cba73473a8f
+      internalID: 1216386981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_45
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 178
+        width: 14
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a005a2ef78fa8314b9e4c6715e967fdf
+      internalID: 1711151479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_46
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 181
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 779a606c5e77ec0489d1d420fb6bab33
+      internalID: -199420919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_47
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 181
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75e54292c5c61b548a79a5145ec0ba55
+      internalID: 1299503458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_48
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 181
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e30f86a7522204eba116fb922e4cb8
+      internalID: 1493830007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_49
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 181
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0abd77813ea4e841822ff90cc78f782
+      internalID: 326653412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_50
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 165
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e864c99517ed5d2498107fa3c9175848
+      internalID: 694003958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_51
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 165
+        width: 36
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680f9b9554716264d82bb682782385ca
+      internalID: 1206779549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_52
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 148
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a7963797ecaef40a26e3261decc4ff
+      internalID: 272324031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_53
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 147
+        width: 15
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344cbb1dc670fb544a08144ebbdbe9ce
+      internalID: -2053876716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_54
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 148
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2ba7e040e557c94dbe16d1d22b1bd17
+      internalID: 846636293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_55
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 148
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a3f2d1ec457abe42aeebae9a0a6339f
+      internalID: -158961819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_56
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 149
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34bf4675e826c294b8206862fa0d12be
+      internalID: 1585497449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_57
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 149
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf71ee45c0b03104783fae256561d81f
+      internalID: 1549364742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_58
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 149
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7484ee235b4fa8439ab3d182eef9375
+      internalID: 1305472260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_59
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 149
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc5bc8729fc9ee4a8f5d9205fe52088
+      internalID: 541198324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_60
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 133
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a743f35595c32e47a6113e56278278b
+      internalID: 805812434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_61
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 133
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3f0edf9759303447a1e258d35aacc5b
+      internalID: 2003344907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_62
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 132
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3b7a48dce35024ca68ce2b9b7436ec
+      internalID: 569687195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_63
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 131
+        width: 25
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2e5f410506e4c47a81dcb9d70894de
+      internalID: 1182712887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_64
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 133
+        width: 36
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b00765645fbf5242a4c76174650ef69
+      internalID: -1131046845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_65
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 117
+        width: 39
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa58f010dafbb8489e7eb9522539cf9
+      internalID: 583551570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_66
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 116
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041c4909017814844a8c14bb2564bcff
+      internalID: 1123097718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_67
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 116
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7de68a8113aa7447849d15e6e7f3a19
+      internalID: 2055362939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_68
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 117
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab72dc75626e904f973fac727f1dc89
+      internalID: -56963476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_69
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 117
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 586411caa882928488023c2624cc7baa
+      internalID: 1407473753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_70
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 117
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6117ab9c00e8e884280928d7d0f537be
+      internalID: -1027081671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_71
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 117
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607c04fa07370874ba2d4cb3b71a3a0a
+      internalID: -717537582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_72
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 101
+        width: 22
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f17eb80a92c4c428d3f7e4986a4d8c
+      internalID: -809967191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_73
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 101
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ac1c24e1671c044bcd9059752f71c8
+      internalID: 1050093765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_74
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 100
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7394d210ed8d3894288c065a62e7e94f
+      internalID: -1182001455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_75
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 99
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13cd587aa80546948865627faae9feb3
+      internalID: -190432499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_76
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 101
+        width: 51
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7094c7337f61e7843aa6fd6f45bffc37
+      internalID: 1953789639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_77
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de09341a14246b24aac1e83944934fda
+      internalID: 1970862558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_78
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 16
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918afa054d87c9349b093c69f5f767ad
+      internalID: 178378443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_79
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 0
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8e32fe4b0af474e9a4ba7affc874af
+      internalID: 1166940614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_80
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 0
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f1f73dfacd0344f958880d249ca770
+      internalID: -878550592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocks_81
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08cfdf4d83c6ae45afbe3c84326bded
+      internalID: -1709614554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Rocks_0: 1654079353
+      Rocks_1: -1298769089
+      Rocks_10: -1233304962
+      Rocks_11: -455434014
+      Rocks_12: -1745862067
+      Rocks_13: 1020010988
+      Rocks_14: -1319832231
+      Rocks_15: 1280252796
+      Rocks_16: -1432186605
+      Rocks_17: 1709921424
+      Rocks_18: 451126319
+      Rocks_19: -1443115691
+      Rocks_2: 412745487
+      Rocks_20: -1619940134
+      Rocks_21: 832488226
+      Rocks_22: 135571276
+      Rocks_23: 2142891554
+      Rocks_24: -145603120
+      Rocks_25: -1507763483
+      Rocks_26: -1323482578
+      Rocks_27: -172091577
+      Rocks_28: -1081057934
+      Rocks_29: -782883073
+      Rocks_3: 1007607584
+      Rocks_30: 1355064838
+      Rocks_31: 122727801
+      Rocks_32: -1955314496
+      Rocks_33: 604005518
+      Rocks_34: 1732334231
+      Rocks_35: -1682118479
+      Rocks_36: 201422438
+      Rocks_37: -1356967638
+      Rocks_38: 903310991
+      Rocks_39: 145199567
+      Rocks_4: 1270823820
+      Rocks_40: 1135119486
+      Rocks_41: 802422517
+      Rocks_42: 1394634413
+      Rocks_43: -438897456
+      Rocks_44: 1216386981
+      Rocks_45: 1711151479
+      Rocks_46: -199420919
+      Rocks_47: 1299503458
+      Rocks_48: 1493830007
+      Rocks_49: 326653412
+      Rocks_5: 612861888
+      Rocks_50: 694003958
+      Rocks_51: 1206779549
+      Rocks_52: 272324031
+      Rocks_53: -2053876716
+      Rocks_54: 846636293
+      Rocks_55: -158961819
+      Rocks_56: 1585497449
+      Rocks_57: 1549364742
+      Rocks_58: 1305472260
+      Rocks_59: 541198324
+      Rocks_6: -1758584281
+      Rocks_60: 805812434
+      Rocks_61: 2003344907
+      Rocks_62: 569687195
+      Rocks_63: 1182712887
+      Rocks_64: -1131046845
+      Rocks_65: 583551570
+      Rocks_66: 1123097718
+      Rocks_67: 2055362939
+      Rocks_68: -56963476
+      Rocks_69: 1407473753
+      Rocks_7: -676863829
+      Rocks_70: -1027081671
+      Rocks_71: -717537582
+      Rocks_72: -809967191
+      Rocks_73: 1050093765
+      Rocks_74: -1182001455
+      Rocks_75: -190432499
+      Rocks_76: 1953789639
+      Rocks_77: 1970862558
+      Rocks_78: 178378443
+      Rocks_79: 1166940614
+      Rocks_8: -1407745226
+      Rocks_80: -878550592
+      Rocks_81: -1709614554
+      Rocks_9: -1937433005
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
