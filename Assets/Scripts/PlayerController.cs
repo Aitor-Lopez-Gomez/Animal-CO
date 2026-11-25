@@ -148,4 +148,18 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate(){
         transform.position += movimiento * speed * Time.deltaTime;
     }
+
+    public void BloquearJugador()
+    {
+        movimiento = Vector3.zero;
+        tiempoAtaque = 0f;
+
+        animator.SetBool("movimiento", false);
+        animator.SetBool("atacando", false);
+
+        efectoMordisco.SetActive(false);
+        audioSource.Stop();
+
+        enabled = false;
+    }
 }

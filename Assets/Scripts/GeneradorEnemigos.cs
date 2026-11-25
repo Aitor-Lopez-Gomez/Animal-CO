@@ -2,9 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.Video;
 
 public class GeneradorEnemigos : MonoBehaviour
 {
@@ -24,6 +25,10 @@ public class GeneradorEnemigos : MonoBehaviour
     public TextMeshProUGUI textoTemporizador;
     public GameObject panelDescanso;
     public TextMeshProUGUI textoCuentaAtras;
+    public VideoPlayer videoCinematica;
+    public CanvasGroup panelTransicionBoss;
+    public float duracionFundido = 2f;
+    
 
 
     void Start()
@@ -75,12 +80,15 @@ public class GeneradorEnemigos : MonoBehaviour
             if (oleadaActual == 20)
             {
                 DatosPartida.vidaJugador = jugador.GetComponent<VidaJugador>().vida;
-                textoOleada.text = "OLEADA 20 - BOSS";
-                textoTemporizador.text = "";
 
-                Debug.Log("Entrando en la sala del jefe final");
+                jugador.GetComponent<PlayerController>().BloquearJugador();
+
+                textoOleada.gameObject.SetActive(false);
+                textoTemporizador.gameObject.SetActive(false);
+
+                StartCoroutine(TransicionBoss());
+
                 enabled = false;
-                SceneManager.LoadScene("SalaJefe");
                 return;
             }
             
@@ -119,6 +127,37 @@ public class GeneradorEnemigos : MonoBehaviour
             }
         }
         enemigosGenerados.Clear();
+    }
+
+    IEnumerator TransicionBoss()
+    {
+        float tiempo = 0f;
+
+        videoCinematica.Prepare();
+
+        while (tiempo < duracionFundido)
+        {
+            tiempo += Time.deltaTime;
+            panelTransicionBoss.alpha = Mathf.Clamp01(tiempo / duracionFundido);
+
+            yield return null;
+        }
+
+        panelTransicionBoss.alpha = 1f;
+
+        yield return new WaitForSeconds(1f);
+
+        videoCinematica.loopPointReached += FinalizarCinematica;
+        videoCinematica.Play();
+
+        yield return new WaitForSeconds(0.3f);
+
+        panelTransicionBoss.alpha = 0f;
+    }
+    void FinalizarCinematica(VideoPlayer video)
+    {
+        video.loopPointReached -= FinalizarCinematica;
+        SceneManager.LoadScene("SalaJefe");
     }
 
 
