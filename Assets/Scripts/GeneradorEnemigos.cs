@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 public class GeneradorEnemigos : MonoBehaviour
@@ -73,11 +74,13 @@ public class GeneradorEnemigos : MonoBehaviour
             
             if (oleadaActual == 20)
             {
+                DatosPartida.vidaJugador = jugador.GetComponent<VidaJugador>().vida;
                 textoOleada.text = "OLEADA 20 - BOSS";
                 textoTemporizador.text = "";
 
                 Debug.Log("Entrando en la sala del jefe final");
                 enabled = false;
+                SceneManager.LoadScene("SalaJefe");
                 return;
             }
             
