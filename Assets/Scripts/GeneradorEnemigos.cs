@@ -75,7 +75,7 @@ public class GeneradorEnemigos : MonoBehaviour
             oleadaActual++;
             temporizadorOleada = duracionOleada;
             textoOleada.text = "OLEADA " + oleadaActual; 
-
+            
             
             if (oleadaActual == 20)
             {
@@ -85,7 +85,9 @@ public class GeneradorEnemigos : MonoBehaviour
 
                 textoOleada.gameObject.SetActive(false);
                 textoTemporizador.gameObject.SetActive(false);
-
+                jugador.GetComponent<VidaJugador>().textoVida.gameObject.SetActive(false);
+                jugador.GetComponent<VidaJugador>().barraVida.gameObject.SetActive(false);
+                
                 StartCoroutine(TransicionBoss());
 
                 enabled = false;
