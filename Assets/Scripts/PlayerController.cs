@@ -110,8 +110,17 @@ public class PlayerController : MonoBehaviour
 
         if (rc)
         {
-            Debug.Log("Enemigo detectado");
-            rc.collider.GetComponent<VidaEnemigo>().RecibirDano(25);
+            VidaEnemigo enemigo = rc.collider.GetComponent<VidaEnemigo>();
+            VidaBoss boss = rc.collider.GetComponent<VidaBoss>();
+
+            if(enemigo != null)
+            {
+                enemigo.RecibirDano(25);
+            }
+            else if (boss != null)
+            {
+                boss.RecibirDano(25);
+            }
         }
         else
         {

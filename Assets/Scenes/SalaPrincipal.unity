@@ -15457,7 +15457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70258747305841e4abf5b60031adefef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 7
   tiempoAtaque: 0
   distanciaCaja: 1
   tamanno: {x: 0.4, y: 0.4}
@@ -20233,9 +20233,9 @@ MonoBehaviour:
   enemigo: {fileID: 1506183486424172182, guid: 587f275bc237ded4c9c3cdd555f0d35d, type: 3}
   jugador: {fileID: 733303042}
   tiempoGeneracion: 3
-  oleadaActual: 19
-  duracionOleada: 5
-  tiempoDescanso: 10
+  oleadaActual: 18
+  duracionOleada: 40
+  tiempoDescanso: 6
   puntos:
   - {fileID: 1184566398}
   - {fileID: 505581873}
