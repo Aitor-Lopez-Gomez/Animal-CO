@@ -115,11 +115,11 @@ public class PlayerController : MonoBehaviour
 
             if(enemigo != null)
             {
-                enemigo.RecibirDano(25);
+                enemigo.RecibirDano(1000);
             }
             else if (boss != null)
             {
-                boss.RecibirDano(25);
+                boss.RecibirDano(1000);
             }
         }
         else

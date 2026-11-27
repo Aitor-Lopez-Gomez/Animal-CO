@@ -15,6 +15,7 @@ public class VidaEnemigo : MonoBehaviour
             GetComponent<EnemigoController>().enabled = false;
             GetComponent<Collider2D>().enabled = false;
             Destroy(gameObject, tiempoMuerte);
+            DatosPartida.puntacion += 10;
         }
     }
 }

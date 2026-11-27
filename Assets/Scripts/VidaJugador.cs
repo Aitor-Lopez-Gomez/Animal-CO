@@ -12,6 +12,7 @@ public class VidaJugador : MonoBehaviour
     public Slider barraVida;
     public TextMeshProUGUI  textoVida;
     bool estaMuerto = false;
+    public GameObject panelDerrota;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class VidaJugador : MonoBehaviour
           
         }  
         ActualizarHUD();
+        panelDerrota.SetActive(false);
     }
     public void RecibirDano(int dano){
         if (estaMuerto)
@@ -41,8 +43,9 @@ public class VidaJugador : MonoBehaviour
     {
         estaMuerto = true;
         GetComponent<PlayerController>().BloquearJugador();
-        Debug.Log("Has perdido");
+        panelDerrota.SetActive(true);
         Time.timeScale = 0f;
+
     }
 
     void ActualizarHUD()

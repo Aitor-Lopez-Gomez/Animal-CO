@@ -28,6 +28,8 @@ public class GeneradorEnemigos : MonoBehaviour
     public VideoPlayer videoCinematica;
     public CanvasGroup panelTransicionBoss;
     public float duracionFundido = 2f;
+    public TextMeshProUGUI textoPuntuacion;
+    public GameObject panelPuntuacion;
     
 
 
@@ -43,9 +45,13 @@ public class GeneradorEnemigos : MonoBehaviour
     {
         if (esDescanso)
         {
+            
             temporizadorDescanso -= Time.deltaTime;
             textoCuentaAtras.text = "" + Mathf.CeilToInt(Mathf.Max(0f, temporizadorDescanso));
-
+            jugador.GetComponent<VidaJugador>().textoVida.gameObject.SetActive(false);
+            jugador.GetComponent<VidaJugador>().barraVida.gameObject.SetActive(false);
+            panelPuntuacion.SetActive(false);
+            
             if (temporizadorDescanso <= 0)
             {
 
@@ -58,20 +64,23 @@ public class GeneradorEnemigos : MonoBehaviour
         }
 
         temporizador -= Time.deltaTime;
-
+        jugador.GetComponent<VidaJugador>().textoVida.gameObject.SetActive(true);
+        jugador.GetComponent<VidaJugador>().barraVida.gameObject.SetActive(true);
+        panelPuntuacion.SetActive(true);
         if(temporizador <= 0)
         {
             GenerarEnemigos();
             temporizador = tiempoGeneracion;
             
         }
-
+       
         temporizadorOleada -= Time.deltaTime;
         textoTemporizador.text = Mathf.CeilToInt(temporizadorOleada).ToString();
         if(temporizadorOleada <= 0)
         {
             EliminarEnemigos();
-            
+            DatosPartida.puntacion += 50;
+            DatosPartida.oleadaActual++;
             oleadaActual++;
             temporizadorOleada = duracionOleada;
             textoOleada.text = "OLEADA " + oleadaActual; 
@@ -85,6 +94,8 @@ public class GeneradorEnemigos : MonoBehaviour
 
                 textoOleada.gameObject.SetActive(false);
                 textoTemporizador.gameObject.SetActive(false);
+                jugador.GetComponent<VidaJugador>().textoVida.gameObject.SetActive(false);
+                jugador.GetComponent<VidaJugador>().barraVida.gameObject.SetActive(false);
                 jugador.GetComponent<VidaJugador>().textoVida.gameObject.SetActive(false);
                 jugador.GetComponent<VidaJugador>().barraVida.gameObject.SetActive(false);
                 
@@ -105,10 +116,12 @@ public class GeneradorEnemigos : MonoBehaviour
             Debug.Log("Oleada " + oleadaActual + " Tiempo generacion - " + tiempoGeneracion);
             jugador.position = new Vector3(6.47f,-5.47f,-2);
             esDescanso = true;
+            
             panelDescanso.SetActive(true);
+            
             temporizadorDescanso = tiempoDescanso;
         }
-        
+        textoPuntuacion.text = DatosPartida.puntacion.ToString();
     }
     // Update is called once per frame
     void GenerarEnemigos()
