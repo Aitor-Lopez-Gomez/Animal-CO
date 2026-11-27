@@ -9,6 +9,10 @@ public class VidaEnemigo : MonoBehaviour
     Animator animator;
     
     public void RecibirDano(int dano){
+        if(vida <= 0)
+        {
+            return;
+        }
         vida -= dano;
         if(vida <= 0){
             GetComponent<Animator>().SetBool("muerto", true);

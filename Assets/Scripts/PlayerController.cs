@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -7,15 +8,23 @@ public class PlayerController : MonoBehaviour
     public float distanciaCaja;
     public Vector2 tamanno;
     public LayerMask capaEnemigo;
+    
     Vector3 movimiento;
     Animator animator;
     AudioSource audioSource;
     public GameObject efectoMordisco;
     public int dano = 25;
 
-    void Start(){
+    void Start()
+    {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+
+        if (SceneManager.GetActiveScene().name == "SalaJefe")
+        {
+            dano = DatosPartida.dano;
+            speed = DatosPartida.velocidad;
+        }
     }
 
     void Update(){
@@ -179,7 +188,7 @@ public class PlayerController : MonoBehaviour
     }
     public void MejorarVelocidad()
     {
-        speed += 0.5f;
+        speed += 0.25f;
     }
 
 }

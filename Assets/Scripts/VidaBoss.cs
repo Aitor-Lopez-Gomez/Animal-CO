@@ -14,11 +14,13 @@ public class VidaBoss : MonoBehaviour
     public float tiempoMuerte = 2f;
     public GameObject panelVictoria;
     public PlayerController jugador;
+    public int dano = 25;
 
     bool estaMuerto = false;
 
     void Start()
     {
+        DatosPartida.oleadaActual = 20;
         panelVictoria.SetActive(false);
         textoPuntacion.text = DatosPartida.puntacion.ToString();
         ActualizarHUD();
@@ -75,4 +77,6 @@ public class VidaBoss : MonoBehaviour
 
         jugador.BloquearJugador();
     }
+
+    
 }   

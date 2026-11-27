@@ -10,6 +10,8 @@ public class BossController : MonoBehaviour
     public int danoAtaque = 20;
     public float tiempoEntreAtaques = 3f;
     float temporizadorAtaque;
+    public float tiempoAviso = 0.6f;
+    bool atacando = false;
     
     Animator animator;
     void Start()
@@ -25,7 +27,11 @@ public class BossController : MonoBehaviour
     void Movimiento()
     {
         float distancia = Vector3.Distance(transform.position, jugador.position);
-
+        if (atacando)
+        {
+            animator.SetBool("movimiento", false);
+            return;
+        }
         if (distancia > distanciaAtaque)
         {
             transform.position = Vector3.MoveTowards(transform.position,jugador.position,velocidad * Time.deltaTime
@@ -51,12 +57,34 @@ public class BossController : MonoBehaviour
     void Ataque()
     {
         temporizadorAtaque -= Time.deltaTime;
-        float distancia = Vector3.Distance(transform.position, jugador.position);
-        if (distancia <= distanciaAtaque && temporizadorAtaque <= 0)
+
+        float distancia = Vector2.Distance(
+            transform.position, jugador.position);
+
+        if (distancia <= distanciaAtaque &&
+            temporizadorAtaque <= 0 && !atacando)
         {
-            animator.SetTrigger("atacando");
-            jugador.GetComponent<VidaJugador>().RecibirDano(danoAtaque);
-            temporizadorAtaque = tiempoEntreAtaques;
+            StartCoroutine(RealizarAtaque());
         }
     }
+    IEnumerator RealizarAtaque()
+    {
+        atacando = true;
+
+        animator.SetBool("movimiento", false);
+        animator.SetTrigger("atacando");
+
+        yield return new WaitForSeconds(tiempoAviso);
+
+        float distancia = Vector2.Distance(
+            transform.position, jugador.position);
+
+        if (distancia <= distanciaAtaque && enabled)
+        {
+            jugador.GetComponent<VidaJugador>().RecibirDano(danoAtaque);
+        }
+
+        temporizadorAtaque = tiempoEntreAtaques;
+        atacando = false;
+}
 }

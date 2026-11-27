@@ -81,7 +81,8 @@ public class GeneradorEnemigos : MonoBehaviour
         {
             EliminarEnemigos();
             DatosPartida.puntacion += 50;
-            DatosPartida.oleadaActual++;
+            DatosPartida.vidaJugador += 10;
+            jugador.GetComponent<VidaJugador>().RecuperarVida();
             oleadaActual++;
             temporizadorOleada = duracionOleada;
             textoOleada.text = "OLEADA " + oleadaActual; 
@@ -94,6 +95,7 @@ public class GeneradorEnemigos : MonoBehaviour
                 DatosPartida.dano = jugador.GetComponent<PlayerController>().dano;
                 DatosPartida.velocidad = jugador.GetComponent<PlayerController>().speed;
                 jugador.GetComponent<PlayerController>().BloquearJugador();
+                panelPuntuacion.SetActive(false);
 
                 textoOleada.gameObject.SetActive(false);
                 textoTemporizador.gameObject.SetActive(false);

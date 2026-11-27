@@ -7,13 +7,16 @@ using TMPro;
 
 public class VidaJugador : MonoBehaviour
 {
-    public int vida = 100;
-    public int vidaMaxima = 100;
+    public int vida = 50;
+    public int vidaMaxima = 50;
     public Slider barraVida;
     public TextMeshProUGUI  textoVida;
     public GameObject panelPuntuacion;
     bool estaMuerto = false;
     public GameObject panelDerrota;
+    public float probabilidadEsquiva = 0.15f;
+    public float tiempoInvulnerabilidad = 0.5f;
+    float temporizadorInvulnerabilidad = 0f;
 
     // Start is called before the first frame update
     void Start()
@@ -27,19 +30,36 @@ public class VidaJugador : MonoBehaviour
         ActualizarHUD();
         panelDerrota.SetActive(false);
     }
-    public void RecibirDano(int dano){
-        if (estaMuerto)
+
+    void Update()
+    {
+        if (temporizadorInvulnerabilidad > 0)
+        {
+            temporizadorInvulnerabilidad -= Time.deltaTime;
+        }
+    }
+    public void RecibirDano(int dano)
+    {
+        if (estaMuerto || temporizadorInvulnerabilidad > 0)
         {
             return;
         }
+
+        if (Random.value < probabilidadEsquiva)
+        {
+            Debug.Log("Ataque esquivado");
+            return;
+        }
+
         vida -= dano;
-       
+        temporizadorInvulnerabilidad = tiempoInvulnerabilidad;
+
         if (vida <= 0)
         {
             vida = 0;
             Morir();
-
         }
+
         ActualizarHUD();
     }
 
@@ -69,8 +89,14 @@ public class VidaJugador : MonoBehaviour
     
     public void MejorarVida()
     {
-        vidaMaxima += 20;
-        vida += 20;
+        vidaMaxima += 10;
+        vida += 10;
+        ActualizarHUD();
+    }
+
+    public void RecuperarVida()
+    {
+        vida = Mathf.Min(vidaMaxima, vida + 10);
         ActualizarHUD();
     }
 }

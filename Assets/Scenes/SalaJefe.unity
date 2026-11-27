@@ -2102,10 +2102,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jugador: {fileID: 733303042}
-  velocidad: 2
-  distanciaAtaque: 5
-  danoAtaque: 50
-  tiempoEntreAtaques: 3
+  velocidad: 1.5
+  distanciaAtaque: 3
+  danoAtaque: 20
+  tiempoEntreAtaques: 2
+  tiempoAviso: 0.3
 --- !u!61 &379192298
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2135,7 +2136,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.025116682, y: -0.055256546}
@@ -2170,7 +2171,8 @@ MonoBehaviour:
   textoPuntacion: {fileID: 396404918}
   tiempoMuerte: 2
   panelVictoria: {fileID: 1231412546}
-  jugador: {fileID: 0}
+  jugador: {fileID: 733303046}
+  dano: 25
 --- !u!1 &380387461
 GameObject:
   m_ObjectHideFlags: 0
@@ -16215,13 +16217,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733303040}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.12, y: -12.35, z: -2}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.15999985, y: -5.8500004, z: 8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1002947332}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2138020263}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &733303043
 Animator:
@@ -16451,6 +16453,8 @@ MonoBehaviour:
   textoVida: {fileID: 2132704985}
   panelPuntuacion: {fileID: 2117850195}
   panelDerrota: {fileID: 1426432145}
+  probabilidadEsquiva: 0.15
+  tiempoInvulnerabilidad: 0.5
 --- !u!1 &736239884
 GameObject:
   m_ObjectHideFlags: 0
@@ -35222,7 +35226,8 @@ Transform:
   m_LocalPosition: {x: 6.2799997, y: -6.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 733303042}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2138020264
@@ -35289,7 +35294,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2138020263}
-  - {fileID: 733303042}
   - {fileID: 1558133027}
   - {fileID: 1221625966}
   - {fileID: 1155733529}

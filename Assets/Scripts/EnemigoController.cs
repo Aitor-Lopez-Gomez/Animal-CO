@@ -9,7 +9,7 @@ public class EnemigoController : MonoBehaviour
     Vector3 movimiento;
     Animator animator;
     public float tiempoAtaque = 0;
-    public int dano = 25;
+    public int dano = 3;
     public float distanciaCaja;
     public Vector2 tamanno;
     public LayerMask capaJugador;
@@ -17,6 +17,7 @@ public class EnemigoController : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        dano = 3 + ((DatosPartida.oleadaActual - 1) / 3) * 2;
     }
 
     // Update is called once per frame

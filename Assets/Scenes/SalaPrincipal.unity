@@ -263,7 +263,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: +0,5 de velocidad de movimiento
+  m_text: +0,25 de velocidad de movimiento
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -869,7 +869,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &187078171
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15994,7 +15994,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "+20 de vida m\xE1xima y actual"
+  m_text: "+10 de vida m\xE1xima y actual"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -16270,7 +16270,7 @@ MonoBehaviour:
   speed: 3
   tiempoAtaque: 1
   distanciaCaja: 1
-  tamanno: {x: 0.4, y: 0.4}
+  tamanno: {x: 0.8, y: 0.8}
   capaEnemigo:
     serializedVersion: 2
     m_Bits: 8
@@ -16384,12 +16384,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81e17a9ff19866240b87df32584b37b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vida: 100
-  vidaMaxima: 100
+  vida: 20
+  vidaMaxima: 20
   barraVida: {fileID: 1214932186}
   textoVida: {fileID: 822639258}
   panelPuntuacion: {fileID: 1662326525}
   panelDerrota: {fileID: 187078170}
+  probabilidadEsquiva: 0.15
+  tiempoInvulnerabilidad: 0.5
 --- !u!1 &746834885
 GameObject:
   m_ObjectHideFlags: 0
@@ -21772,7 +21774,7 @@ MonoBehaviour:
   enemigo: {fileID: 1506183486424172182, guid: 587f275bc237ded4c9c3cdd555f0d35d, type: 3}
   jugador: {fileID: 733303042}
   tiempoGeneracion: 3
-  oleadaActual: 1
+  oleadaActual: 19
   duracionOleada: 3
   tiempoDescanso: 10
   puntos:
