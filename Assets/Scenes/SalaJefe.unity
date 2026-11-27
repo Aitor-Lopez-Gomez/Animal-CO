@@ -2104,7 +2104,7 @@ MonoBehaviour:
   jugador: {fileID: 733303042}
   velocidad: 2
   distanciaAtaque: 5
-  danoAtaque: 20
+  danoAtaque: 50
   tiempoEntreAtaques: 3
 --- !u!61 &379192298
 BoxCollider2D:
@@ -16328,7 +16328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70258747305841e4abf5b60031adefef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 3
   tiempoAtaque: 0
   distanciaCaja: 1
   tamanno: {x: 0.4, y: 0.4}
@@ -16336,6 +16336,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   efectoMordisco: {fileID: 1002947329}
+  dano: 25
 --- !u!82 &733303047
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16448,6 +16449,7 @@ MonoBehaviour:
   vidaMaxima: 100
   barraVida: {fileID: 229437683}
   textoVida: {fileID: 2132704985}
+  panelPuntuacion: {fileID: 2117850195}
   panelDerrota: {fileID: 1426432145}
 --- !u!1 &736239884
 GameObject:
@@ -34906,6 +34908,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2117850195 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8278701095828935010, guid: 6f405291f3310be4abb2d1cbaec72eb8, type: 3}
+  m_PrefabInstance: {fileID: 1575437324}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2121700474
 GameObject:
   m_ObjectHideFlags: 0

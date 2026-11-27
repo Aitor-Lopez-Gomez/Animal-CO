@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     AudioSource audioSource;
     public GameObject efectoMordisco;
+    public int dano = 25;
 
     void Start(){
         animator = GetComponent<Animator>();
@@ -115,11 +116,11 @@ public class PlayerController : MonoBehaviour
 
             if(enemigo != null)
             {
-                enemigo.RecibirDano(1000);
+                enemigo.RecibirDano(dano);
             }
             else if (boss != null)
             {
-                boss.RecibirDano(1000);
+                boss.RecibirDano(dano);
             }
         }
         else
@@ -171,4 +172,14 @@ public class PlayerController : MonoBehaviour
 
         enabled = false;
     }
+
+    public void MejorarDano()
+    {
+        dano += 5;
+    }
+    public void MejorarVelocidad()
+    {
+        speed += 0.5f;
+    }
+
 }

@@ -30,6 +30,7 @@ public class GeneradorEnemigos : MonoBehaviour
     public float duracionFundido = 2f;
     public TextMeshProUGUI textoPuntuacion;
     public GameObject panelPuntuacion;
+    bool mejoraElegida = false;
     
 
 
@@ -89,7 +90,9 @@ public class GeneradorEnemigos : MonoBehaviour
             if (oleadaActual == 20)
             {
                 DatosPartida.vidaJugador = jugador.GetComponent<VidaJugador>().vida;
-
+                DatosPartida.vidaMaxima = jugador.GetComponent<VidaJugador>().vidaMaxima;
+                DatosPartida.dano = jugador.GetComponent<PlayerController>().dano;
+                DatosPartida.velocidad = jugador.GetComponent<PlayerController>().speed;
                 jugador.GetComponent<PlayerController>().BloquearJugador();
 
                 textoOleada.gameObject.SetActive(false);
@@ -116,7 +119,7 @@ public class GeneradorEnemigos : MonoBehaviour
             Debug.Log("Oleada " + oleadaActual + " Tiempo generacion - " + tiempoGeneracion);
             jugador.position = new Vector3(6.47f,-5.47f,-2);
             esDescanso = true;
-            
+            mejoraElegida = false;
             panelDescanso.SetActive(true);
             
             temporizadorDescanso = tiempoDescanso;
@@ -175,5 +178,35 @@ public class GeneradorEnemigos : MonoBehaviour
         SceneManager.LoadScene("SalaJefe");
     }
 
+    public void ElegirVida()
+    {
+        if (mejoraElegida)
+            return;
+
+        jugador.GetComponent<VidaJugador>().MejorarVida();
+        mejoraElegida = true;
+        temporizadorDescanso = 0f;
+    }
+
+    public void ElegirDano()
+    {
+        if (mejoraElegida)
+            return;
+
+        jugador.GetComponent<PlayerController>().MejorarDano();
+        mejoraElegida = true;
+        temporizadorDescanso = 0f;
+    }
+
+    public void ElegirVelocidad()
+    {
+        if (mejoraElegida)
+            return;
+
+        jugador.GetComponent<PlayerController>().MejorarVelocidad();
+        mejoraElegida = true;
+        temporizadorDescanso = 0f;
+    }
+    
 
 }

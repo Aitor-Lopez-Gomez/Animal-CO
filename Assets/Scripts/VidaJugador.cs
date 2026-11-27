@@ -11,16 +11,19 @@ public class VidaJugador : MonoBehaviour
     public int vidaMaxima = 100;
     public Slider barraVida;
     public TextMeshProUGUI  textoVida;
+    public GameObject panelPuntuacion;
     bool estaMuerto = false;
     public GameObject panelDerrota;
+
     // Start is called before the first frame update
     void Start()
     {
         if (SceneManager.GetActiveScene().name == "SalaJefe")
         {
             vida = DatosPartida.vidaJugador;
-          
-        }  
+            vidaMaxima = DatosPartida.vidaMaxima;
+        }
+
         ActualizarHUD();
         panelDerrota.SetActive(false);
     }
@@ -35,6 +38,7 @@ public class VidaJugador : MonoBehaviour
         {
             vida = 0;
             Morir();
+
         }
         ActualizarHUD();
     }
@@ -42,10 +46,17 @@ public class VidaJugador : MonoBehaviour
     void Morir()
     {
         estaMuerto = true;
+
         GetComponent<PlayerController>().BloquearJugador();
+
+        if (SceneManager.GetActiveScene().name == "SalaPrincipal")
+        {
+            FindObjectOfType<GeneradorEnemigos>().enabled = false;
+        }
+
+        panelPuntuacion.SetActive(false);
         panelDerrota.SetActive(true);
         Time.timeScale = 0f;
-
     }
 
     void ActualizarHUD()
@@ -54,5 +65,12 @@ public class VidaJugador : MonoBehaviour
         barraVida.maxValue = vidaMaxima;
         barraVida.value = vida;
         textoVida.text = vida + "/" + vidaMaxima;
+    }
+    
+    public void MejorarVida()
+    {
+        vidaMaxima += 20;
+        vida += 20;
+        ActualizarHUD();
     }
 }
