@@ -21774,8 +21774,8 @@ MonoBehaviour:
   enemigo: {fileID: 1506183486424172182, guid: 587f275bc237ded4c9c3cdd555f0d35d, type: 3}
   jugador: {fileID: 733303042}
   tiempoGeneracion: 3
-  oleadaActual: 19
-  duracionOleada: 3
+  oleadaActual: 1
+  duracionOleada: 35
   tiempoDescanso: 10
   puntos:
   - {fileID: 1184566398}
